@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Guia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- e um link para um site de icons -->
+    <title>tabela vertical</title>
 </head>
+
 <body>
     <div class="container">
         <div class="mainTitle">
-            css tabela vertical
+            <h2> css tabela vertical</h2>
             <div class="content">
-                <label for="" class="home">
-                 
-                </label>
-                <label for="" class=blog">
-               
-                </label>
-                <label for="" class="help">
-                    
-                </label>
-                <label for="" class="code">
-                    
-                </label>
+                <input type="radio" name="indicador" id="home">
+                <input type="radio" name="indicador" id="blog">
+                <input type="radio" name="indicador" id="help">
+                <input type="radio" name="indicador" id="code">
+                <input type="radio" name="indicador" id="about">
+                <div class="list">
+                    <label for="home" class="home">
+                        <i class="fas fa-home"></i>
+                        <span class="topic">home</span>
+                    </label>
+                    <label for="blog" class=blog">
+                        <i class="fas fa-blog"></i>
+                        <span class="topic">blog</span>
+                    </label>
+                    <label for="help" class="help">
+                        <i class="fas fa-envelope"></i>
+                        <span class="topic">help</span>
+                    </label>
+                    <label for="code" class="code">
+                        <i class="fas fa-code"></i>
+                        <span class="topic">code</span>
+                    </label>
+                    <label for="about" class="about">
+                        <i class="fas fa-user"></i>
+                        <span class="topic">sobre</span>
+                    </label>
+                    <div class="indicator"></div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
