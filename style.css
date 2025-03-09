@@ -8,16 +8,17 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #c4c4c4;
+    /* overflow: auto; */
 }
 
 .container {
-    max-width: 950px;
+    width: 900px;
     background: #371b7e5f;
     border-radius: 12px;
     margin: 0 20px;
@@ -37,16 +38,29 @@ body {
     justify-content: space-between;
 }
 
+.content .textContant .text {
+    display: none;
+}
+
 .container .content .list {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 35%;
-    /* o do cara tava 20 mais quebrou a linha então tive que aumentar */
+    width: 150px;
+}
+
+#home:checked~.textContant .home,
+#blog:checked~.textContant .blog,
+#help:checked~.textContant .help,
+#code:checked~.textContant .code,
+#about:checked~.textContant .about {
+    display: block;
 }
 
 .content .list label {
     height: 60px;
+    display: flex;
+    align-items: center;
     /* background: #371b7e5f;  */
     font-size: 22px;
     font-weight: 500;
@@ -62,6 +76,10 @@ body {
 
 .content .list label:hover {
     color: #c4c4c4;
+}
+
+.content .list label i {
+    margin-right: 10px;
 }
 
 #home:checked~.list .home,
@@ -108,11 +126,19 @@ body {
     display: none;
 }
 
-.container .content .textContant{
+.container .content .textContant {
     width: 75%;
     height: 100%;
 }
 
-.content .textContant p{
-    text-align: center;
+.content .textContant .title {
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.content .textContant p {
+    text-align: justify;
+    font-size: 20px;
 }
